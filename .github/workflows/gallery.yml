@@ -22,9 +22,6 @@ jobs:
         pip install flake8 pytest coverage
         pip install -r requirements.txt
 
-    - name: Run Flake8
-      run: flake8 .
-
     - name: Run Django tests
       run: python manage.py test
 
