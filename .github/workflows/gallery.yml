@@ -22,7 +22,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run Django tests with coverage
-      run: python manage.py test
+      run: coverage run manage.py test
 
     - name: Generate HTML report
       run: coverage html
